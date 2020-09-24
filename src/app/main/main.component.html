@@ -1,0 +1,39 @@
+  
+
+<div class='container'>
+
+  <div class='row'>
+    <div class='col-12'>
+      <h2 class='mt-5 mb-0 textHeader'>Welcome to India</h2>
+      <h4 class='m-0'>Here we guide you the best places to visit</h4>
+    </div>
+  </div>
+
+  
+  <div class='row  justify-content-end'>
+    <div class='col-10 col-sm-6'>
+      <h2 class='mt-5 mb-0 text-right'> It is better to travel well than to arrive.</h2>
+      <h3 class='m-0 text-right  text-muted'>-- Buddha</h3>
+    </div>
+  </div>
+
+
+    <div>
+      <h2><u> Tourist places:- </u></h2>
+     
+      <div class='row'>
+        <div class='col-12 col-md-4 col-lg-4 col-sm-6' *ngFor="let state of states">
+          <a [routerLink]="['/detailedmain', state.name ]" routerLinkActive="router-link-active" class='text-decoration-none '>
+            <div class="card mb-4 anime">
+              <img class="card-img-top" height="250" src={{state.image}} alt={{state.name}}>
+              <div class="card-body p-0  cardText">
+                <h4 class="card-title m-0 p-2 text-center">{{state.name}}</h4>      
+              </div>
+            </div>
+          </a>
+        </div>  
+      </div>
+    </div>
+    
+    <!--agra goa shimla amristar  ooty alleppey jaipur ladakh mysore darjeeling-->
+  </div>

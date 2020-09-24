@@ -1,0 +1,17 @@
+<div class='container'>
+    <h2 class='pl-3 mt-3'>{{places.name}}</h2>
+    <hr>
+
+    <div *ngFor="let place of places.place">
+        <h3><u>{{place.name}}</u></h3>
+        <div class='row'>
+            <div class='col-6 col-md-3 col-lg-2 col-sm-4 mb-4' *ngFor="let data of place.places">
+                <img class='img' width='150px' height='150px' src={{data.image}} alt={{data.name}}>
+            </div>
+        </div>
+    <hr>
+    </div>
+    
+    
+
+</div>

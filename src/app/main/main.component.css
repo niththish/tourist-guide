@@ -1,0 +1,14 @@
+.cardText{
+    background-color: #0089FF;
+    color:#fff;
+}
+.textHeader{
+    font-weight: 500;
+}
+.navcolor{
+    background-color: #0089FF;
+}
+.anime:hover{
+    transform: scale(1.02);
+    transition:0.5s ease-out;
+}

@@ -1,0 +1,7 @@
+.img{
+    border-radius: 5px;
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-out;
+}
